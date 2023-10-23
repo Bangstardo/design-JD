@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #2e2e2e;
+    --secondary-color: #16FF00;
+    --third-color: #000000;
+    --fourth-color: #FFED00;
+}
+
+body {
+    margin: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/* Gives the seccion its properties */
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+/* First divider*/
+
+.wave-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-1 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 170px;
+}
+
+.wave-1 .shape-fill {
+    fill: #000000;
+}
+
+/* Second Divider*/
+
+.wave-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-2 svg {
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height: 278px;
+}
+
+.wave-2 .shape-fill {
+    fill: #000000;
+}
+
+/* third divider*/
+
+.wave-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-3 svg {
+    position: relative;
+    display: block;
+    width: calc(291% + 1.3px);
+    height: 340px;
+}
+
+.wave-3 .shape-fill {
+    fill: #000000;
+}
+
+/* Haikei background */
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(/resources/green-wave.svg);
+}

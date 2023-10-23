@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <title>Robox design</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid porro, iste modi est dolorum animi
+            officiis perspiciatis inventore fuga repellat nisi reprehenderit, ratione fugiat assumenda molestias labore
+            illum? Earum.</p>
+
+        <!-- First wave on the bottom of the page -->
+
+        <div class="wave-2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Dolores dolor nostrum deserunt unde sint facere nulla maiores corrupti tempora, eligendi architecto
+            distinctio deleniti, eius aliquid ea. Minima voluptates officia totam doloribus aspernatur quasi atque vel
+            animi, similique est.</p>
+
+        <!-- second wave on top of the second section -->
+
+        <div class="wave-1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <!-- last wave bottom of the second section -->
+
+        <div class="wave-3">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="pink">
+        <h1>Nice Curves</h1>
+        <p>Doloribus totam nam dolorum a ex temporibus quod, dignissimos mollitia? Corporis consectetur adipisci
+            recusandae autem deleniti delectus quidem veritatis consequatur inventore. Unde, accusamus inventore culpa
+            beatae at illo vero voluptatem!</p>
+
+        <!-- first blob -->
+
+        <svg class="blob-motion" id="visual" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(479.31098002201594 154.81918959768353)">
+                <path 
+                    id="blob1"
+                    d="M91.2 -85C111.7 -70.7 117.4 -35.4 113.5 -3.9C109.6 27.6 96.2 55.2 75.7 67.7C55.2 80.2 27.6 77.6 -2.4 79.9C-32.3 82.3 -64.6 89.6 -85.2 77.1C-105.9 64.6 -115 32.3 -113 2C-111 -28.3 -97.9 -56.6 -77.2 -70.9C-56.6 -85.2 -28.3 -85.6 3.5 -89.2C35.4 -92.7 70.7 -99.4 91.2 -85"
+                    fill="#14e20b"></path>
+            </g>
+
+        <!-- second blob -->
+
+            <g transform="translate(492.9454210803005 127.9376370927416)" style="visibility:hidden">
+                <path 
+                    id="blob2"
+                    d="M52.6 -54.6C65.1 -40.1 70 -20 70.5 0.5C71 21 67 42 54.5 67C42 92 21 121 -0.2 121.2C-21.4 121.4 -42.9 92.9 -62.1 67.9C-81.2 42.9 -98.1 21.4 -96.3 1.8C-94.6 -17.9 -74.2 -35.8 -55 -50.3C-35.8 -64.8 -17.9 -75.9 1.1 -77C20 -78 40.1 -69.1 52.6 -54.6"
+                    fill="#14e20b"
+                ></path>
+            </g>
+        </svg>
+
+        <!-- animation for the blob -->
+
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true }
+            ).start();
+        </script>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Dicta at, facilis eius perferendis quo assumenda soluta ratione rerum debitis recusandae omnis nulla, quae,
+            id quis nobis pariatur error veritatis? Atque neque, provident id quaerat inventore recusandae dignissimos
+            corporis.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Error numquam laboriosam, pariatur ad modi doloribus sunt. Accusantium necessitatibus perspiciatis, culpa
+            animi harum, impedit velit ea natus quasi molestiae quas dicta earum amet commodi doloribus odit dolorem,
+            inventore aspernatur!</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Labore magnam minima aliquid, quam eveniet reprehenderit error totam at commodi architecto quos, molestiae
+            dolorum praesentium tempora earum tempore quae! Dolores ullam quae consectetur iusto nisi nulla!
+            Perferendis, unde repudiandae.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Repudiandae placeat, asperiores maxime voluptas illo officia cumque incidunt! Mollitia in vel eius optio ad
+            aperiam necessitatibus laborum, temporibus commodi animi quibusdam dicta expedita ea modi, adipisci, nam
+            porro. Magnam.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Ut repellendus laboriosam dolore corporis voluptatibus, tempore est iste adipisci commodi harum ex ad magnam
+            nisi praesentium? Esse mollitia, blanditiis neque, ad, illo consequuntur accusantium distinctio incidunt
+            ipsum tempora dicta.</p>
+    </section>
+
+</body>
+
+</html>
